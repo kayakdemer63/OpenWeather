@@ -37,13 +37,13 @@ public:
 
     open_weather weather;
     /** @private @var open_weather weather
-     *  @brief Déclaration de l'objet aqi de type open_weather.
+     *  @brief Déclaration de l'objet weather de type open_weather.
      */
 
     void message(double i);
     /** @private @fn message(int i)
-     *  @brief Déclaration de la Méthode. Fonction qui écrit un message en fonction de l'indice de qualité de l'air.
-     *  @param[in] i Indice de qualité de  l'air.
+     *  @brief Déclaration de la Méthode. Fonction qui écrit un message en fonction de la température.
+     *  @param[in] i Indice de température.
      */
 
 private:
@@ -60,7 +60,7 @@ private slots:
 
     void search();
     /** @private @fn search()
-     *  @brief Change l'indice de qualité de l'air actuel.
+     *  @brief Charge le fichier Json actuel.
      */
 
     void new_ville();

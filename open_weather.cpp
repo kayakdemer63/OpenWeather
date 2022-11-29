@@ -73,12 +73,12 @@ double open_weather::get_feels_like()
 QString open_weather::get_weather()
 {
     QJsonObject info = this->infos;
-    QJsonArray jData = info.value("weather").toArray();
+    QJsonObject jData = info.value("weather").toArray().at(0).toObject();
     qDebug() << jData;
 
-    //QJsonValue jValue = jData.value("description");
-    //qDebug() << jValue;
-    //return jValue.toString();
+    QJsonValue jValue = jData.value("description");
+    qDebug() << jValue;
+    return jValue.toString();
 }
 
 int open_weather::get_humidity()

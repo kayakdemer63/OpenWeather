@@ -35,7 +35,7 @@ public:
      */
 
     void get_infos();
-    /** @public @fn int get_infos()
+    /** @public @fn void get_infos()
      *  @brief Déclaration de la Méthode. Fonction permettant de récupérer le fichier Json.
      *  @param[out] objetJson()
      */
@@ -47,14 +47,14 @@ public:
      */
 
     double get_feels_like();
-    /** @public @fn int get_infos()
+    /** @public @fn double get_feels_like()
      *  @brief Déclaration de la Méthode. Fonction permettant de récupérer la température ressentie à partir du fichier Json.
      *  @param[out] jValue.toDouble()
      */
 
     QString get_weather();
-    /** @public @fn int get_infos()
-     *  @brief Déclaration de la Méthode. Fonction permettant de récupérer l'indice de qualité de l'air à partir du fichier Json.
+    /** @public @fn QString get_weather()
+     *  @brief Déclaration de la Méthode. Fonction permettant de récupérer le temps qu'il fait à partir du fichier Json.
      *  @param[out] jValue.toString()
      */
 
@@ -65,13 +65,13 @@ public:
      */
 
     double get_wind_speed();
-    /** @public @fn int get_infos()
+    /** @public @fn double get_wind_speed()
      *  @brief Déclaration de la Méthode. Fonction permettant de récupérer la vitesse du vent à partir du fichier Json.
      *  @param[out] jValue.toDouble()
      */
 
     double get_wind_direction();
-    /** @public @fn int get_infos()
+    /** @public @fn double get_wind_direction()
      *  @brief Déclaration de la Méthode. Fonction permettant de récupérer la direction du vent à partir du fichier Json.
      *  @param[out] jValue.toDouble()
      */
